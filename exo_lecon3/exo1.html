@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercie 1</title>
+</head>
+<body>
+    <script>
+        function signeProduit() {
+            let a = parseFloat(prompt("Entrez le premier nombre :"));
+            let b = parseFloat(prompt("Entrez le deuxième nombre :"));
+           if (a<0 || b<0) {
+                alert("le produit negatif est négatif.");
+                signe="négatif";
+            } else {
+                alert("Les deux nombres sont positifs.");
+                signe="positif";
+            }
+
+
+            document.write("Le produit de " + a + " et " + b + " est "+ signe);
+        }
+function afficheSigneProduit(a, b) {
+  if (a === 0 || b === 0) {
+   alert("Le produit est nul (0).");
+  } else if ((a > 0 && b > 0) || (a < 0 && b < 0)) {
+    alert("Le produit est positif (+).");
+  } else {
+    alert("Le produit est négatif (-).");
+  }
+}
+
+
+let a = parseFloat(prompt("Entrez le premier nombre (a) :"));
+let b = parseFloat(prompt("Entrez le deuxième nombre (b) :"));
+
+afficheSigneProduit(a, b);
+
+    </script>
+</body>
+</html>

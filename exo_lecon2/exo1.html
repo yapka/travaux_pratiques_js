@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice 1</title>
+</head>
+<body>
+
+<h1>Exercice 1</h1>
+<div class="container">
+  <p id="test"></p>
+</div>
+
+<script>
+  function surface_cercle() {
+    let rayon = parseFloat(prompt("Entrez le rayon du cercle : "));
+    let surface = Math.PI * rayon * rayon;
+    alert("La surface du cercle est : " + surface.toFixed(2));
+
+
+    document.getElementById("test").innerHTML = 
+      "La surface du cercle de "+ rayon +" cm est de " + surface.toFixed(2) 
+  }
+
+  console.log(Math.PI);
+  surface_cercle();
+</script>
+
+</body>
+</html>
